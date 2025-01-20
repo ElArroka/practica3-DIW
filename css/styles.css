@@ -1,0 +1,639 @@
+/* Estilos generales */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 16rem; 
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F4F6F7;
+}
+
+header .logo {
+    margin-bottom: 0.5rem;
+}
+
+header .logo a {
+    text-decoration: none;
+    font-size: 3rem; 
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+header .logo a .highlight {
+    font-weight: 700;
+    color: #DE2333; 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.4rem; 
+    font-family: 'Source Sans Pro', sans-serif; 
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+header nav ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a.active {
+    color: #DE2333; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+
+/* Hero */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* Introducción */
+.intro {
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: transparent; 
+}
+
+
+.intro h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.3rem; 
+    margin: 1rem 0; 
+    line-height: 1.8;
+    text-align: left; 
+}
+
+.highlight {
+    font-weight: 700;
+    color: #DE2333; 
+}
+
+/* Noticias */
+.news {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 2rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.news article {
+    border: 1px solid #F4F6F7;
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
+
+.news article .date {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.news article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.news article h3 {
+    font-size: 1.5rem;
+    color: #DE2333;
+    margin-bottom: 0.5rem;
+}
+
+.news article a {
+    color: #DE2333;
+    text-decoration: none;
+}
+
+.news article a:hover {
+    color: #000000;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: left;
+}
+
+footer .footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0;
+    position: relative; 
+}
+
+footer .footer-links a::after {
+    content: "·"; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: #FFFFFF;
+}
+
+footer .footer-links a:last-child::after {
+    content: ""; 
+}
+
+/* Título principal */
+.app-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    color: #000000;
+}
+
+
+/* Contenedor de las aplicaciones */
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    padding: 0 4rem; 
+}
+
+/* Estilo de cada aplicación */
+.app-box {
+    background-color: #F4F6F7;
+    padding: 1.2rem; 
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+    min-height: 180px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* Títulos dentro de las celdas */
+.app-box h3 {
+    font-size: 1.6rem; 
+    font-weight: bold;
+    margin-bottom: 0.5rem; 
+    color: #000000;
+}
+
+/* Párrafos dentro de las celdas */
+.app-box p {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    margin: 0.5rem 0; 
+}
+
+/* Links de cada celda */
+.app-box a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #DE2333;
+    text-decoration: none;
+    margin-top: auto; 
+}
+
+.app-box a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Estilo para la cuadrícula de videos */
+/* Contenedor de los videos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 3rem; 
+    padding: 3rem; 
+}
+
+/* Estilo de cada tarjeta de video */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.video-card {
+    background-color: #F4F6F7;
+    border-radius: 0.5rem;
+    padding: 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 300px; 
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.video-card h3 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000;
+}
+
+.video-card p {
+    font-size: 1.2rem; 
+    line-height: 1.8;
+    color: #555;
+    text-align: justify; 
+}
+
+
+/* Estilo para el contenedor principal de Despacho 42 */
+.despacho-main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 16rem;
+}
+
+/* Columna principal */
+.despacho-main-content {
+    flex: 3;
+    max-width: 800px;
+}
+
+/* Artículos recientes - Columna lateral */
+.despacho-recent-articles {
+    flex: 1;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumbs alineados */
+.despacho-breadcrumbs {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.despacho-breadcrumbs a {
+    text-decoration: none;
+    color: #DE2333;
+}
+.despacho-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen principal */
+.despacho-article-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Meta información del artículo */
+.despacho-article-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+    text-align: left; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 0,5rem; 
+}
+
+/* Título principal del artículo */
+.despacho-page-title {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-left: rem; 
+    line-height: 1.2;
+    color: #000;
+}
+
+/* Títulos dentro del artículo */
+.despacho-article-content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.despacho-article-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Párrafos del contenido */
+.despacho-article-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Contenedor principal del apartado "¿Qué es Despacho 42?" */
+.despacho-info {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor para la imagen y texto */
+.despacho-info-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilo de la imagen */
+.despacho-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* Texto descriptivo */
+.despacho-info-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.despacho-info-text p {
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Enlaces */
+.despacho-links h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.despacho-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.despacho-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.despacho-links ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #DE2333;
+}
+
+.despacho-links ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Estilizado de enlaces dentro del contenido */
+.despacho-article-content a {
+    color: #DE2333;
+    text-decoration: none;
+}
+.despacho-article-content a:hover {
+    text-decoration: underline;
+}
+
+/* Artículos recientes */
+.despacho-recent-articles {
+    flex: 1;
+    max-width: 300px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.despacho-recent-articles h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000; 
+}
+
+.despacho-recent-articles .article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem; 
+    border-bottom: none;
+    padding-bottom: 0; 
+}
+
+.despacho-recent-articles .article img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+.despacho-recent-articles .article p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.despacho-recent-articles .article p:first-child {
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.despacho-recent-articles .article p:last-child {
+    font-size: 0.9rem;
+    color: #666; 
+    text-align: right;
+}
+
+/* Formulario de comentarios */
+/* Estilo general del formulario */
+.comment-section {
+    margin-top: 3rem;
+    padding: 0; 
+    background-color: #ffffff; 
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Títulos */
+.comment-section h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.comment-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.comment-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.comment-section input,
+.comment-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+}
+
+/* Área de texto */
+.comment-section textarea {
+    height: 120px;
+    resize: none;
+}
+
+
+/* Política de privacidad */
+.policy {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.policy input[type="checkbox"] {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.policy label {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+/* Botón */
+.comment-section button {
+    background-color: #DE2333;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.comment-section button:hover {
+    background-color: #C01E2B;
+}
+
+/* Sticky Nav */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 1000; 
+    padding: 2rem 16rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

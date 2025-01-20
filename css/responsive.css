@@ -1,0 +1,250 @@
+/* Estilos responsivos */
+
+/* Móviles */
+@media (max-width: 600px) {
+    /* Encabezado */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 2rem;
+    }
+
+    header .logo {
+        margin-bottom: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /* Pie de página */
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    footer .social-media {
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+    footer .footer-links a::after {
+        content: ""; 
+    }
+   
+    .app-grid {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem; 
+        padding: 1rem; 
+    }
+
+    /* Ajustes en cada celda */
+    .app-box {
+        padding: 1rem; 
+        font-size: 1rem; 
+    }
+
+    .app-box h3 {
+        font-size: 1.2rem; 
+    }
+
+    .app-box p {
+        font-size: 0.9rem; 
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem; 
+        padding: 1rem; 
+    }
+
+    .video-card {
+        padding: 1rem; 
+    }
+
+    .video-card iframe {
+        height: 200px; 
+    }
+
+    .video-card h3 {
+        font-size: 1.2rem; 
+        margin-bottom: 0.5rem;
+    }
+
+    .video-card p {
+        font-size: 1rem; 
+        line-height: 1.4; 
+    }
+
+    .sticky-nav {
+        padding: 1rem; 
+        text-align: center; 
+    }
+
+    .sticky-nav nav ul {
+        flex-direction: column; 
+        gap: 1rem; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .sticky-nav nav ul li a {
+        font-size: 1.2rem; 
+    }
+
+    .despacho-main-container {
+        padding: 1rem;
+    }
+
+    .despacho-article-meta {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .despacho-page-title {
+        font-size: 1.5rem;
+    }
+
+    .despacho-article-content {
+        padding: 0 1rem;
+    }
+}
+
+
+/* Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Encabezado */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 2rem;
+    }
+
+    header .logo {
+        margin-bottom: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    /* Sección "AL DÍA" */
+    .news {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem; 
+    }
+
+    .news article {
+        text-align: left;
+    }
+
+    /* Grilla de aplicaciones */
+    .app-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem; 
+        padding: 1rem;
+    }
+
+    .app-box {
+        padding: 1rem;
+        background-color: #f9f9f9; 
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .app-box h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .app-box p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .app-box a {
+        font-size: 1rem;
+        color: #DE2333;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .app-box a:hover {
+        text-decoration: underline;
+    }
+
+
+    /* Grilla de videos */
+    .video-grid {
+        grid-template-columns: 1fr; 
+        gap: 2.5rem; 
+        padding: 2rem; 
+    }
+
+    .video-card {
+        padding: 1.5rem; 
+    }
+
+    .video-card iframe {
+        height: 250px; 
+    }
+
+    .video-card p {
+        font-size: 1.1rem; 
+        line-height: 1.7; 
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    footer .footer-links a::after {
+        content: ""; /* Elimina el punto */
+    }
+
+    footer .social-media {
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+}
+
+
